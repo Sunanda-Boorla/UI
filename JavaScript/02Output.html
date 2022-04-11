@@ -7,27 +7,26 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Hello First Heading</h1>
-    <p>Paragraph</p>
-    <button onclick="clickME1()">Writing on Page - (document.write)</button>
-    <button onclick="clickME2()">Alert - (window.alert)</button>
-    <button onclick="clickME3()">Print on Console - (console.log)</button>
-    <button onclick="clickME4()">Print the Page - (window.print)</button>
-
+    <h3>Outputs in JS</h3>
+    
     <script>
-        function clickME1(){
-            document.write(5+3)
+        function myFunc1(){
+            document.write(5+8)
         }
-        function clickME2(){
-            window.alert(45)
-            alert(45)
+        function myFunc2(){
+            window.alert("Hello") //alert("Hello")
         }
-        function clickME3(){
-            console.log(5)
+        function myFunc3(){
+            console.log(5+10)
         }
-        function clickME4(){
+        function myFunc4(){
             window.print()
+
         }
     </script>
+    <button onclick="myFunc1()">Writing on page</button>
+    <button onclick="myFunc2()">Alert</button>
+    <button onclick="myFunc3()">Print on console</button>
+    <button onclick="myFunc4()">Print Page</button>
 </body>
 </html>
