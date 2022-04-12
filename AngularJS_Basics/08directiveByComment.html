@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <title>Document</title>
+</head>
+<body ng-app="myApp">
+    <!-- directive: test-directive -->
+
+    <script>
+        var app= angular.module("myApp",[])
+        app.directive("testDirective",function(){
+            return{
+                restrict:"M",
+                replace:true,
+                template: "<h2>Invoke directive from a comment!</h2>"
+            };
+        });
+    </script>
+    <p>Value "M" must be added to restrict property to be able to invoke the directive from Comment.</p>
+    <p>Replace property make comment visible</p>
+</body>
+</html>
