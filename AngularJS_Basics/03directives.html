@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <div ng-app="" ng-init="firstname='John'; quantity=1; cost= 5">
+        <p>Name: <input type="text" ng-model="firstname"></p><br>
+        You wrote: {{firstname}} <br>
+        Quantity: <input type="number" ng-model="quantity">
+        Cost: <input type="number" ng-model="cost"> <br>
+        <p>Total Cost: {{ quantity * cost }}</p>
+
+    </div>
+</body>
+</html>
